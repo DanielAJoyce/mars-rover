@@ -1,4 +1,4 @@
-The problem - Mars Rover 
+# The problem - Mars Rover 
 Write a program that takes in commands and moves one or more robots around Mars. 
 ● The world should be modelled as a grid with size m x n 
 ● Your program should read the input, update the robots, and print out the final states of the robots 
@@ -22,3 +22,7 @@ Another example for the input:
 The output would be: 
 (2, 3, W) 
 (1, 0, S) LOST
+
+# How to run
+
+You can either use `npm run start` which will take the default test file, or you can add one yourself and just do `node index.js {file_path_here}`
