@@ -17,11 +17,18 @@ describe("Mars Rover", () => {
             expect(results3).toStrictEqual([4, 3]);
             expect(results4).toStrictEqual([3, 4]);
         })
+
+        it('should throw an error when the direction is not supported', () => {
+            try { 
+                calculateMovement('X', 1, 2);
+                fail();
+            } catch(error){
+                expect(error).toBeInstanceOf(Error);
+                expect(error.toString()).toBe('Error: Direction not recognised: X')
+            }
+        })
     });
 
-
-
-    
     it("should determine the appropriate outcome of the mars rover", async () => {
         const command = `4 8
         (2, 3, E) LFRFF

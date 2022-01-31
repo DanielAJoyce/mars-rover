@@ -18,7 +18,7 @@ const calculateMovement = (direction, currentX, currentY) => {
       currentX -= 1;
       break;
     default:
-      console.error("uknown direction");
+      throw new Error(`Direction not recognised: ${direction}`)
   }
   return [currentX, currentY];
 };
